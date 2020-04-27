@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .intro{
+            background: url("./img/intro.gif");
+            background-size: cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        .hide{
+            display:none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="intro">
+        
+    </div>
+    <audio id="musicplayer" autoplay>
+        <source src="./sound/intro.mp3">
+    </audio>
+    <div class="main">
+
+    </div>
+    <script>
+        $(window).on("load",function(){
+            setTimeout(function(){
+                location.href="main.html";
+            }, 7800);
+        });
+    </script>
+</body>
+</html>
