@@ -3,27 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>OverTeaser</title>
     <link rel="stylesheet" href="https://wowjs.uk/css/libs/animate.css">
     <script src="https://wowjs.uk/dist/wow.min.js"></script>
+    <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/nanumgothic.css">
     <style>
         * {
             margin: 0px;
             padding: 0px;
+            font-family: Nanum Gothic, Arial, Helvetica, sans-serif;
         }
         .main{
             background-color: rgb(24, 24, 24);
+            background-size: cover;
             position: absolute;
             width: 100%;
-            height: 100%;
+            height: 10000px;
         }
         .container{
             width: 1200px;
             min-width: 1200px;
             margin: 0 auto;
         }
+
+        .mainPage{
+            width: 1200px;
+            height: 1020px;
+        }
         .storyTab img{
             width: 500px;
+        }
+        .next{
+            text-align: center;
+        }
+        .next>h1{
+            margin-bottom: 20px;
+        }
+        .next>img, .next>h1{
+            font-size: 50px;
+            color: white;
+            width: 1200px;
+        }
+        .storyTab>div{
+            margin-bottom: 200px;
         }
         .left{
             display: inline-block;
@@ -31,16 +53,27 @@
         }
         h2{
             color: white;
+            margin-bottom: 20px;
+            font-size: 50px;
         }
         p{
             color: white;
             display: inline-block;
+            font-size: 18px;
         }
-        .text{
+        .textRight{
             padding: 10px;
             display: inline-block;
             width: 659px;
             font-size: 15px;
+            float: right;
+        }
+        .textLeft{
+            padding: 10px;
+            display: inline-block;
+            width: 659px;
+            font-size: 15px;
+            float: left;
         }
         .tabOne{
             font-size:0;
@@ -52,23 +85,156 @@
 <body>
     <div class="main">
         <div class="container">
+            <div class="mainPage">
+
+            </div>
             <div class="storyTab">
-                <div class="wow fadeInLeft tabOne">
+                <div class="wow fadeInLeft tab1">
                     <div class="left">
                         <img src="./img/storyImg1.jpg" alt="">
                     </div>
-                    <div class="text">
+                    <div class="textRight">
                         <h2>블랙메사 동부</h2>
                         <p>
-                            인류의 비밀 연구업체 블랙메사, 뉴 맥시코에 위치한 블랙메사 동부에선 인류의 발전을<br> 기하며 언제나와 같이 불철주야 노력하는 연구원들로 하여금
+                            인류의 연구업체 블랙메사, 뉴 맥시코에 위치한 블랙메사 동부에선 인류의 발전을 기하며 언제나와 같이 불철주야 노력하는 연구원들로 하여금
                             인류는 뛰어난 기술 문명을 이룩하고 외계에대한 관찰, 연구가 활발히 일어날 수 있었다.
                             인류에게 표면적으로 드러난것은 적지만 이미 현 인류를 수년, 수십년, 수백년 뛰어넘는 기술을 가지고 있던 이들은 한 사건으로 인하여 큰 전환점을 맞게된다.
                         </p>
                     </div>
                 </div>
+
+                <div class="wow fadeInRight tab2">
+                    <div class="textLeft">
+                        <h2>G맨과 Zen 크리스탈</h2>
+                        <p>
+                            연구와 성취를 향한 갈망은 그 끝을 고할 줄 몰랐고 자신의 지식적 욕망을 충족시키기 위해서라면 무엇이든 하는 이들은
+                            어느때와 같이 한 연구를 진행하고 있었고 이는 Zen 크리스탈을 이용한 텔레포트 기술 연구였다,
+                            이들은 출처 불명의 한 Zen 크리스탈을 이용한 연구를 진행중이였지만 곧 무언가 잘못되었다는것을 눈치채게되고 장비를 정지하려 하였으나 모든것은
+                            나사빠진 톱니바퀴처럼 미친듯이 돌아가고 있었다. 
+                        </p>
+                        <p>
+                            <br>
+                        </p>
+                    </div>
+                    <div class="right">
+                        <img src="./img/storyImg2.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="wow fadeInLeft tab3">
+                    <div class="left">
+                        <img src="./img/storyImg3.jpg" alt="">
+                    </div>
+                    <div class="textRight">
+                        <h2>"작동을 정지합니다!"</h2>
+                        <p>
+                            실험은 인류 탑 클래스의 뛰어난 연구원들의 관리하에 진행되었지만 일은 벌어졌고 사방으로 초록 스파크가 튀기 시작하였다,
+                             그리고 얼마 안가 블랙메사는 지옥을 방불케하는 모습으로 변모하게 되었고 Zen 크리스탈이 일으킨 대공명 현상으로 블랙메사 동부 전역에
+                             지진과 동시에 엑소젠이라 불리는 Zen 행성의 원주민, 즉 외계 생명체들이 대거 유입되게 된다.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="wow fadeInRight tab4">
+                    <div class="textLeft">
+                        <h2>엑소젠과의 전쟁</h2>
+                        <p>
+                            엑소젠의 대거 유입으로 블랙메사 경비원들은 사력을 다해 연구소를 지키려 하였으나 끔찍하게도 많고 지구상에 존재하지도 않는 외계 생명체를 상대로 인류의 화기는 쉬이 먹혀들지 않았다, 
+
+                        </p>
+                        <p>
+                            <br>
+                            그들또한 나름대로 방법을 찾고 연구원을 지키려 하였으나 평소 기밀유지와 민감한 기계장치들이 손상되는것을 꺼리던 탓일까 내부 경비병력의 부재로 인하여 대응은 빨랐음에도 피해는 결코 적지 않았다.
+                        </p>
+                    </div>
+                    <div class="right">
+                        <img src="./img/storyImg4.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="wow fadeInLeft tab5">
+                    <div class="left">
+                        <img src="./img/storyImg5.jpg" alt="">
+                    </div>
+                    <div class="textRight">
+                        <h2>과묵한 영웅</h2>
+                        <p>
+                            이때 기술력의 결정체 HEV슈트를 입고 빠루(노루발못뽑이)한자루를 들고 일어난 영웅이 있었으니 그가 바로 고든 프리맨이다.
+                        </p>
+                        <p>
+                            <br>
+                            그는 경비원들이 전해준 총기류와 빠루 한자루, 즉석에서 만들어낸 외계 생명체를 이용한 신들린듯한 전투를 벌이며 연구소 내부의 외계 생명체를 급속도로 제거해나갔다.
+                        </p>
+                        <p>
+                            <br>
+                            허나 이대론 안되겠다고 생각한 고든 프리맨은 이 사태의 원흉을 제거하고자 Xen 행성으로 넘어가 보르티곤트의 수장, 니할란스를 제거하는 작전을 세워 연구원들의 도움을 받아 Xen 행성으로 떠나게 된다.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="wow fadeInRight tab6">
+                    <div class="textLeft">
+                        <h2>Xen 행성에서의 결전</h2>
+                        <p>
+                            고든 프리맨은 곧장 Xen 행성으로 가 보르티곤트의 수장, 니할란스와 조우하게 되지만 니할란스의 초능력과 알 수 없는 능력들탓에 고전하게된다.
+                        </p>
+                        <p>
+                            <br>
+                            허나 영웅은 역경을 딛고 일어서는 자라 했던가, 그는 곧 니할란스의 약점을 파악하고 니할란스를 무찌르는데 성공하게된다.
+                        </p>
+                    </div>
+                    <div class="right">
+                        <img src="./img/storyImg6.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="wow fadeInDown next">
+                    <h1>강점기</h1>
+                    <img src="./img/bg.png" alt="">
+                </div>
+
+                <div class="wow fadeInRight tab7">
+                    <div class="textLeft">
+                        <h2>영웅은 없었다.</h2>
+                        <p>
+                            다시금 도래했어야 할 미래는 뒤바뀌었다.
+                        </p>
+                        <p>
+                            <br>
+                            영웅은 등장하지 않았고, 인류는 곧 단 7시간만에 우주 연합에게 패배하고 이들에게 지배당하는 삶을 살게 되었다.
+                        </p>
+                        <p>
+                            <br>
+                            억압, 탄압, 고통, 충격, 공포, 이 모든것은 시민에게 주어진 삶 그 자체를 표현하는 모든 수단이 되었다.
+                        </p>
+                    </div>
+                    <div class="right">
+                        <img src="./img/storyImg7.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="wow fadeInLeft tab8">
+                    <div class="left">
+                        <img src="./img/storyImg8.jpg" alt="">
+                    </div>
+                    <div class="textRight">
+                        <h2>지배의 시대</h2>
+                       <p>
+                           모든 시민은 파란 죄수복과도 같은 옷을 입고 시민 보호기동대의 감시와 지도를 받으며 살아가게 되었다, 이들에게 자유란 없었다, 삶이란 없었다, 그들은 가축 그 이하의 존재로써 전락하고 죽지못해 살아가는 삶을 살길 강요받게 된 것 이다.
+                       </p>
+                       <p>
+                           <br>
+                           허나 이들에게도 그저 끝없는 고통의 삶만이 주어진것은 아니였으니, 이미 지구 곧곧에선 반시민들의 혁명의 물결이 일고 있었다, 각자 자본을 모아 무기를 마련하고 우주 연합의 지배에서 벗어나 다시금 인류에 의한 정부를 재건하고자 모여든것이다.
+                       </p>
+                       <p>
+                           <br>
+                           이른바, 혁명의 시대가 도래하였고 소식을 들은 반시민들은 람다 마크를 혁명의 문양으로 지정, 각지에서 각각의 사명, 신념, 목적을 위해 어둠에 숨어 암약하기에 이른다.
+                       </p>
+                    </div>
+                </div>
             </div>
             <div class="factionTap">
-
+                
             </div>
         </div>
     </div>
